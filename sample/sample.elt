@@ -1,0 +1,19 @@
+package sample
+
+import hello
+       io
+
+; inc increments its operand by 1.
+:: number -> number
+inc n = n + 1
+
+:: io·IO ()
+greet = io·Print hello·Msg
+
+:: number -> number
+f 0 = 0
+f n | n < 0 = n - 1
+    | _ = 2 * n
+
+:: number -> number -> number
+x <#> y = x*y + x/y
