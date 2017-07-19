@@ -13,7 +13,11 @@ greet = io·Print hello·Msg
 :: number -> number
 f 0 = 0
 f n | n < 0 = n - 1
-    | _ = 2 * n
+    | _ = f' 2 * n
+  where
+    x = 77 - 98
+    f' a = x - y + n*a
+      where y = 66 + a
 
 :: number -> number -> number
 x <#> y = x*y + x/y
