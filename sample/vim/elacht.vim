@@ -39,6 +39,8 @@ syntax match eltTypeAnnotation /::/
 syntax match eltArrow /->/
 syntax match eltComment /;.*/
 
+syntax region eltString start=+"+ skip=+\\"+ end=+"+
+
 
 
 
@@ -50,6 +52,7 @@ highlight default link eltDeclaration Keyword
 highlight default link eltTypeAnnotation Keyword
 highlight default link eltArrow Keyword
 highlight default link eltSymbol Operator
+highlight default link eltString String
 
 
 
