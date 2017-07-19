@@ -1,7 +1,7 @@
 package sample
 
-import hello
-       io
+import "hello"
+       "io"
 
 ; inc increments its operand by 1.
 :: number -> number
