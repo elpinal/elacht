@@ -32,7 +32,7 @@ endif
 syntax keyword eltDirective package import
 syntax keyword eltType number
 
-syntax match eltSymbol /[^A-Za-z0-9 \t]\+/
+syntax match eltSymbol /[^A-Za-z0-9 \t()]\+/
 syntax match eltDecimal /\<\d\+\>/
 syntax match eltDeclaration /=/
 syntax match eltTypeAnnotation /::/
