@@ -1,7 +1,9 @@
 package sample
 
-import "hello"
-       "io"
+import (
+        "hello"
+        "io"
+)
 
 ; inc increments its operand by 1.
 :: number -> number
@@ -14,10 +16,11 @@ greet = io·Print hello·Msg
 f 0 = 0
 f n | n < 0 = n - 1
     | _ = f' 2 * n
-  where
+  where (
     x = 77 - 98
     f' a = x - y + n*a
       where y = 66 + a
+  )
 
 :: number -> number -> number
 x <#> y = x*y + x/y
