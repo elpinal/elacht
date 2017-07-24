@@ -1,0 +1,14 @@
+package sample
+
+import "testing"
+
+TestInc :: testing·T -> io·IO ()
+TestInc t = if got /= want then
+              t·Error $ "want " ++ show want ++ " but got " ++ show got
+            else
+              return ()
+  where (
+    input = 3
+    got = inc input
+    want = 4
+  )
