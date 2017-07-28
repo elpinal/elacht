@@ -30,7 +30,7 @@ endif
 
 
 syntax keyword eltDirective package import
-syntax keyword eltType number
+syntax keyword eltType number natural
 syntax keyword eltConditional if then else case of
 syntax keyword eltKeyword let in where
 
