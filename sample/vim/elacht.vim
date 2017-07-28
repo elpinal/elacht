@@ -31,7 +31,7 @@ endif
 
 syntax keyword eltDirective package import
 syntax keyword eltType number
-syntax keyword eltConditional if then else
+syntax keyword eltConditional if then else case of
 
 syntax match eltSymbol /[^A-Za-z0-9 \t()]\+/
 syntax match eltDecimal /\<\d\+\>/
