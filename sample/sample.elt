@@ -6,21 +6,22 @@ import (
 )
 
 ; inc increments its operand by 1.
-:: number -> number
-inc n = n + 1
+:: number -> number.
+inc n = n + 1.
 
-:: io·IO ()
-greet = io·Print hello·Msg
+:: io·IO ().
+greet = io·Print hello·Msg.
 
-:: number -> number
-f 0 = 0
-f n | n < 0 = n - 1
-    | _ = f' 2 * n
+:: number -> number.
+f 0 = 0.
+f n | n < 0 = n - 1.
+    | _ = f' 2 * n.
   where (
-    x = 77 - 98
-    f' a = x - y + n*a
-      where y = 66 + a
+    x = 77 - 98.
+    f' a = x - y
+             + n*a.
+      where y = 66 + a.
   )
 
-:: number -> number -> number
-x <#> y = x*y + x/y
+:: number -> number -> number.
+x <#> y = x*y + x/y.
