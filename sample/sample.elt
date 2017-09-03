@@ -6,42 +6,42 @@ import (
 )
 
 ; inc increments its operand by 1.
-:: number -> number.
-inc n = n + 1.
+:: number -> number
+inc n = n + 1
 
-:: io·IO ().
-greet = io·print hello·msg.
+:: io·IO ()
+greet = io·print hello·msg
 
-:: number -> number.
-f 0 = 0.
-f n | n < 0 = n - 1.
-    | _ = f' 2 * n.
+:: number -> number
+f 0 = 0
+f n | n < 0 = n - 1
+    | _ = f' 2 * n
   where (
-    x = 77 - 98.
+    x = 77 - 98
     f' a = x - y
-             + n*a.
-      where y = 66 + a.
+             + n*a
+      where y = 66 + a
   )
 
-:: number -> number -> number.
-x <#> y = x*y + x/y.
+:: number -> number -> number
+x <#> y = x*y + x/y
 
-:: number -> number -> number -> number.
+:: number -> number -> number -> number
 g a b c =
   let
-    x = a + b + c.
-    y = a*b + b*c + c*a.
-    z = a * b * c.
+    x = a + b + c
+    y = a*b + b*c + c*a
+    z = a * b * c
   in
     x*y*z
     + 7*x
     + 21*y
-    + 63*z.
+    + 63*z
 
-:: natural -> natural.
+:: natural -> natural
 h x = case x of
   1 -> 2
        + 1
        + 3
   _ -> x + 11*x
-         + 21*x*x.
+         + 21*x*x
