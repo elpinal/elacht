@@ -6,7 +6,7 @@ A short-term goal is to create a text editor.
 
 ## Implementation
 
-Currently, there is a compiler, [hec](https://github.com/elpinal/hec).
+Currently, there is two compiler, [hec](https://github.com/elpinal/hec) (in Haskell) and [gec](https://github.com/elpinal/gec) (in Go).
 
 ## Author
 
