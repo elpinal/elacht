@@ -10,7 +10,7 @@ import (
 inc n = n + 1.
 
 :: io·IO ().
-greet = io·Print hello·Msg.
+greet = io·print hello·msg.
 
 :: number -> number.
 f 0 = 0.
